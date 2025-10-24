@@ -1,0 +1,15 @@
+{
+  "name": "rubiks-cube",
+  "version": "1.0.0",
+  "description": "A Rubiks-Cube solver ",
+  "license": "ISC",
+  "author": "Abhay Nosran",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

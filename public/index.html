@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rubik's Cube Input Interface</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>🧩 Rubik's Cube Input Interface</h1>
+
+<div id="instructions">
+  <p>Select a color and click on any sticker to color it. Centers are fixed and cannot be changed.</p>
+  <p><strong>Constraints:</strong> Each color can only be used 9 times. Centers are fixed and cannot be changed.</p>
+</div>
+
+<div id="color-picker">
+  <h3>Color Palette</h3>
+  <div id="color-buttons"></div>
+  <div id="color-counts"></div>
+</div>
+
+<div id="cube-container">
+  <div class="face-labels">
+    <div class="face-label">Top (White)</div>
+  </div>
+  <div class="face top" data-face="0"></div>
+  
+  <div class="middle-row">
+    <div class="face-label">Left (Green)</div>
+    <div class="face-label">Front (Red)</div>
+    <div class="face-label">Right (Blue)</div>
+    <div class="face-label">Back (Orange)</div>
+  </div>
+  <div class="middle-row">
+    <div class="face left" data-face="2"></div>
+    <div class="face front" data-face="1"></div>
+    <div class="face right" data-face="3"></div>
+    <div class="face back" data-face="4"></div>
+  </div>
+  
+  <div class="face-labels">
+    <div class="face-label">Bottom (Yellow)</div>
+  </div>
+  <div class="face bottom" data-face="5"></div>
+</div>
+
+<div id="controls">
+  <button id="generate">Generate 54-Character Cube String</button>
+  <div id="output-container">
+    <label for="output">Cube String Output:</label>
+    <textarea id="output" readonly placeholder="Click 'Generate' to create the cube string..."></textarea>
+  </div>
+</div>
+
+<div id="toast-container"></div>
+<script src="script.js"></script>
+</body>
+</html>
